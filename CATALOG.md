@@ -338,17 +338,6 @@ resolution with Senzing. Organized by category with download details for each.
 - **Key fields:** Name, aliases, DOB, place of birth, nationality, charges
 - **Update frequency:** Continuous
 
-### Interpol Red Notices (API)
-
-- **Entity types:** Persons
-- **Source:** INTERPOL
-- **Download:** `https://ws-public.interpol.int/notices/v1/red` (JSON API, no key required)
-- **Format:** JSON (paginated)
-- **Records:** ~7,000–8,000
-- **License:** INTERPOL public data
-- **Key fields:** Name, nationality, DOB, place of birth, gender, charges
-- **Update frequency:** Continuous
-
 ---
 
 ## Healthcare
@@ -467,16 +456,49 @@ resolution with Senzing. Organized by category with download details for each.
 
 ## Pre-Mapped Senzing Data (CORD)
 
-Senzing provides pre-mapped Collections Of Relatable Data (CORDs) for testing:
+Senzing provides pre-mapped Collections Of Relatable Data (CORDs) — real
+(not synthetic) historical snapshots already in Senzing JSONL format. These
+are ready to load directly without any transformation.
 
-| Dataset    | Scope                          | Sources | Records |
-|------------|--------------------------------|---------|---------|
-| Las Vegas  | US data                        | 11      | Varies  |
-| London     | International data             | 5       | Varies  |
-| Moscow     | Cyrillic / non-roman script    | 6       | Varies  |
+> **Note:** CORD data is for evaluation/testing only, not operational use.
 
-Access via the Senzing MCP `get_sample_data` tool or at
-`https://senzing.com/senzing-ready-data-collections-cord/`
+### Las Vegas CORD (214,845 records, 10 sources)
+
+| Source             | Records | Download URL                                                        |
+|--------------------|---------|---------------------------------------------------------------------|
+| EQUIFAX            | 72,799  | `https://senzing.com/datasets/equifax-lasvegas_A.jsonl`             |
+| NPI-PROVIDERS      | 71,060  | `https://senzing.com/datasets/npi-lasvegas.jsonl`                   |
+| PROFOUND           | 28,040  | `https://senzing.com/datasets/profound-lasvegas.jsonl`              |
+| ENFORMION          | 19,595  | `https://senzing.com/datasets/enformion-lasvegas_A.jsonl`           |
+| NOMINO-RISK        | 14,119  | `https://senzing.com/datasets/nominodata_combined-lasvegas.jsonl`   |
+| PPP_LOANS          | 3,488   | `https://senzing.com/datasets/ppp_loans_over_150k-lasvegas.jsonl`   |
+| OPEN-OWNERSHIP     | 2,039   | `https://senzing.com/datasets/open_ownership-lasvegas.jsonl`        |
+| GLEIF              | 1,952   | `https://senzing.com/datasets/gleif-lasvegas.jsonl`                 |
+| US-LABOR-VIOLATIONS| 1,554   | `https://senzing.com/datasets/us_labor_violations-lasvegas.jsonl`   |
+| ICIJ               | 199     | `https://senzing.com/datasets/icij-lasvegas.jsonl`                  |
+
+### London CORD (123,911 records, 5 sources)
+
+| Source          | Records | Download URL                                                         |
+|-----------------|---------|----------------------------------------------------------------------|
+| GLEIF           | 63,863  | `https://senzing.com/datasets/gleif-london.jsonl`                    |
+| GLOBALDATA      | 40,569  | `https://senzing.com/datasets/globaldata-london_central_a.jsonl`     |
+| ICIJ            | 19,232  | `https://senzing.com/datasets/icij-london.jsonl`                     |
+| OPEN-SANCTIONS  | 137     | `https://senzing.com/datasets/open_sanctions-london.jsonl`           |
+| OFAC            | 110     | `https://senzing.com/datasets/ofac-london.jsonl`                     |
+
+### Moscow CORD (26,308 records, 6 sources)
+
+| Source          | Records | Download URL                                                         |
+|-----------------|---------|----------------------------------------------------------------------|
+| ICIJ            | 13,996  | `https://senzing.com/datasets/icij-moscow.jsonl`                     |
+| OPEN-OWNERSHIP  | 3,805   | `https://senzing.com/datasets/open_ownership-moscow.jsonl`           |
+| OPEN-SANCTIONS  | 2,968   | `https://senzing.com/datasets/open_sanctions-moscow.jsonl`           |
+| NOMINODATA      | 2,413   | `https://senzing.com/datasets/nominodata_risk-moscow.jsonl`          |
+| OFAC            | 1,886   | `https://senzing.com/datasets/ofac-moscow.jsonl`                     |
+| GLEIF           | 1,240   | `https://senzing.com/datasets/gleif-moscow.jsonl`                    |
+
+More info: `https://senzing.com/senzing-ready-data-collections-cord/`
 
 ---
 

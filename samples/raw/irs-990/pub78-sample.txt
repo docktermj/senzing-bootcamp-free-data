@@ -1,0 +1,12 @@
+
+
+000587764|Iglesia Bethesda Inc.|Lowell|MA|United States|PC
+000635913|Ministerio Apostolico Jesucristo Es El Senor Inc.|Lawrence|MA|United States|PC
+000765634|Mercy Chapel International|Mattapan|MA|United States|PC
+000841363|Agape House of Prayer|Mattapan|MA|United States|PC
+000852649|Bethany Presbyterian Church|Brookline|MA|United States|PC
+000889899|Academic and Behavioral Clinic Inc.|Boston|MA|United States|PC
+001347537|Restoration of Hope Church Ministries|Roxbury|MA|United States|PC
+001689178|Safe Haven Residential Services Inc.|Randolph|MA|United States|PC
+002030711|Church of Our Lord Jesus Christ of Macedonia|Newark|NJ|United States|PC
+002067446|Usta National Junior Tennis League Inc.|White Plains|NY|United States|POF

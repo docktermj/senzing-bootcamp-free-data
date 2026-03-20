@@ -26,6 +26,12 @@ download URLs, field details, and licensing information.
 │       │   ├── raw/       # Original downloaded files (git-ignored)
 │       │   └── mapped/    # Senzing-format JSON lines (git-ignored)
 │       └── mapping.json   # Senzing entity specification mapping reference
+├── samples/               # 10-record samples from each data source
+│   ├── cord/              # Pre-mapped Senzing JSONL (ready to load)
+│   │   ├── las-vegas/     # US data (10 sources, 100 records)
+│   │   ├── london/        # International data (5 sources, 50 records)
+│   │   └── moscow/        # Cyrillic/non-roman script (6 sources, 60 records)
+│   └── raw/               # Original format (CSV, XML, JSON) for 18 sources
 ├── scripts/               # Shared utility scripts
 ├── Makefile               # Common operations (download-all, transform-all)
 ├── CLAUDE.md              # Claude Code conventions for this project

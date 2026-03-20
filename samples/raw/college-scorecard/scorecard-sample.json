@@ -1,0 +1,99 @@
+{
+    "metadata": {
+        "page": 0,
+        "total": 6429,
+        "per_page": 10
+    },
+    "results": [
+        {
+            "school.name": "Alabama A & M University",
+            "school.city": "Normal",
+            "school.state": "AL",
+            "school.zip": "35762",
+            "school.school_url": "www.aamu.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100654
+        },
+        {
+            "school.name": "University of Alabama at Birmingham",
+            "school.city": "Birmingham",
+            "school.state": "AL",
+            "school.zip": "35294-0110",
+            "school.school_url": "https://www.uab.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100663
+        },
+        {
+            "school.name": "Amridge University",
+            "school.city": "Montgomery",
+            "school.state": "AL",
+            "school.zip": "36117-3553",
+            "school.school_url": "https://www.amridgeuniversity.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100690
+        },
+        {
+            "school.name": "University of Alabama in Huntsville",
+            "school.city": "Huntsville",
+            "school.state": "AL",
+            "school.zip": "35899",
+            "school.school_url": "www.uah.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100706
+        },
+        {
+            "school.name": "Alabama State University",
+            "school.city": "Montgomery",
+            "school.state": "AL",
+            "school.zip": "36104-0271",
+            "school.school_url": "www.alasu.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100724
+        },
+        {
+            "school.name": "The University of Alabama",
+            "school.city": "Tuscaloosa",
+            "school.state": "AL",
+            "school.zip": "35487-0100",
+            "school.school_url": "www.ua.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100751
+        },
+        {
+            "school.name": "Central Alabama Community College",
+            "school.city": "Alexander City",
+            "school.state": "AL",
+            "school.zip": "35010",
+            "school.school_url": "www.cacc.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100760
+        },
+        {
+            "school.name": "Athens State University",
+            "school.city": "Athens",
+            "school.state": "AL",
+            "school.zip": "35611",
+            "school.school_url": "https://www.athens.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100812
+        },
+        {
+            "school.name": "Auburn University at Montgomery",
+            "school.city": "Montgomery",
+            "school.state": "AL",
+            "school.zip": "36117-3596",
+            "school.school_url": "www.aum.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100830
+        },
+        {
+            "school.name": "Auburn University",
+            "school.city": "Auburn",
+            "school.state": "AL",
+            "school.zip": "36849",
+            "school.school_url": "www.auburn.edu/",
+            "school.accreditor": "Southern Association of Colleges and Schools Commission on Colleges",
+            "id": 100858
+        }
+    ]
+}
