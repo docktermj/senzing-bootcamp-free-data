@@ -389,7 +389,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **Entity types:** Persons (donors), organizations (committees, PACs)
 - **Source:** Federal Election Commission
 - **Download:** `https://www.fec.gov/data/browse-data/?tab=bulk-data`
-- **Format:** CSV
+- **Format:** Pipe-delimited TXT (no header row)
 - **Records:** Tens of millions of contribution records; ~1 million unique donors per cycle
 - **License:** US government public domain
 - **Key fields:** Contributor name, address, employer, occupation, amount, committee name
@@ -521,15 +521,15 @@ More info: `https://senzing.com/senzing-ready-data-collections-cord/`
 For a bootcamp demonstrating entity resolution across multiple sources, start
 with these complementary datasets:
 
-| Priority | Source                  | Why                                                    |
-|----------|-------------------------|--------------------------------------------------------|
-| 1        | OFAC SDN List           | Rich person+org data with aliases, DOB, IDs            |
-| 2        | HHS OIG LEIE            | Large person dataset with DOB, NPI, addresses           |
-| 3        | GLEIF LEI               | Best cross-jurisdiction org identifier, CC0 license     |
-| 4        | OpenSanctions           | Normalized aggregation of 100+ lists, daily updates     |
-| 5        | ICIJ Offshore Leaks     | Relationship graph connecting persons to entities       |
-| 6        | NC Voter Registration   | Largest free person dataset with DOB (~8M records)      |
-| 7        | UK Companies House      | 5.5M orgs with addresses and registration numbers       |
-| 8        | IRS 990                 | US nonprofits with EIN and officer/director names        |
-| 9        | FEC Contributions       | Person names + addresses + employer (high duplication)   |
-| 10       | NPI Registry            | 7M+ healthcare providers with addresses and specialties  |
+| Priority | Source                  | Sample | Why |
+|----------|-------------------------|--------|-----|
+| 1        | OFAC SDN List           | [schema](samples/raw/ofac-sdn/README.md) | Rich person+org data with aliases, DOB, IDs |
+| 2        | HHS OIG LEIE            | [schema](samples/raw/hhs-oig-leie/README.md) | Large person dataset with DOB, NPI, addresses |
+| 3        | GLEIF LEI               | [schema](samples/raw/gleif-lei/README.md) | Best cross-jurisdiction org identifier, CC0 license |
+| 4        | OpenSanctions           | [schema](samples/raw/opensanctions/README.md) | Normalized aggregation of 100+ lists, daily updates |
+| 5        | ICIJ Offshore Leaks     | [schema](samples/raw/icij-offshore-leaks/README.md) | Relationship graph connecting persons to entities |
+| 6        | NC Voter Registration   | | Largest free person dataset with DOB (~8M records) |
+| 7        | UK Companies House      | [schema](samples/raw/uk-companies-house/README.md) | 5.5M orgs with addresses and registration numbers |
+| 8        | IRS 990                 | [schema](samples/raw/irs-990/README.md) | US nonprofits with EIN and officer/director names |
+| 9        | FEC Contributions       | [schema](samples/raw/fec-contributions/README.md) | Person names + addresses + employer (high duplication) |
+| 10       | NPI Registry            | [schema](samples/raw/npi-registry/README.md) | 7M+ healthcare providers with addresses and specialties |

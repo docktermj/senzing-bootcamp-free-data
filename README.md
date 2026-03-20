@@ -1,79 +1,81 @@
 # senzing-bootcamp-free-data
 
-A collection of free, publicly available data sources prepared for use with the
+A collection of free, publicly available data sources for use with the
 [Senzing](https://senzing.com) entity resolution bootcamp.
 
-Each data source includes download scripts, Senzing-mapped JSON output, and
-documentation describing the source, its license, and how it was mapped.
+This repository provides:
 
-See [CATALOG.md](CATALOG.md) for a full list of candidate data sources with
-download URLs, field details, and licensing information.
+- A **catalog** of 30+ free data sources with download URLs, field details,
+  and licensing ([CATALOG.md](CATALOG.md))
+- **Raw samples** (10 records each) from 18 sources in their original
+  format — CSV, XML, JSON — for practicing Senzing data mapping
+- **CORD samples** (pre-mapped Senzing JSONL) from 21 sources across
+  3 regional datasets, ready to load directly
+- A **template** for building download-and-transform pipelines for new sources
 
 ## Repository structure
 
 ```text
 .
-├── datasources/           # One subdirectory per data source
-│   ├── .template/         # Template for adding a new data source
-│   │   ├── README.md
-│   │   ├── download.sh
-│   │   └── transform.py
-│   └── <source-name>/     # e.g. us-ofac-sdn, us-sam-exclusions
-│       ├── README.md      # Description, URL, license, update frequency
-│       ├── download.sh    # Downloads raw data into data/raw/
-│       ├── transform.py   # Converts raw data to Senzing JSON format
-│       ├── data/
-│       │   ├── raw/       # Original downloaded files (git-ignored)
-│       │   └── mapped/    # Senzing-format JSON lines (git-ignored)
-│       └── mapping.json   # Senzing entity specification mapping reference
-├── samples/               # 10-record samples from each data source
-│   ├── cord/              # Pre-mapped Senzing JSONL (ready to load)
-│   │   ├── las-vegas/     # US data (10 sources, 100 records)
-│   │   ├── london/        # International data (5 sources, 50 records)
-│   │   └── moscow/        # Cyrillic/non-roman script (6 sources, 60 records)
-│   └── raw/               # Original format (CSV, XML, JSON) for 18 sources
-├── Makefile               # Common operations (download-all, transform-all)
-├── CATALOG.md             # Full catalog of 30+ free data sources
-├── CONTRIBUTING.md        # Guide for adding new data sources
-├── LICENSE                # Apache 2.0
-└── README.md              # This file
+├── CATALOG.md                # Full catalog of 30+ free data sources
+├── CONTRIBUTING.md           # Guide for adding new data sources
+├── Makefile                  # Common operations
+├── samples/
+│   ├── README.md             # Index of all samples + raw-to-CORD cross-reference
+│   ├── cord/                 # Pre-mapped Senzing JSONL (ready to load)
+│   │   ├── las-vegas/        # US data (10 sources, 100 records)
+│   │   ├── london/           # International data (5 sources, 50 records)
+│   │   └── moscow/           # Cyrillic/non-roman script (6 sources, 60 records)
+│   └── raw/                  # Original format (CSV, XML, JSON) for 18 sources
+│       └── <source-name>/    # e.g. ofac-sdn, hhs-oig-leie
+│           ├── README.md     # Schema, download URL, license, entity types
+│           └── *.csv|xml|json  # Sample data in original format
+├── datasources/
+│   └── .template/            # Template for new data source integrations
+│       ├── README.md
+│       ├── download.sh
+│       └── transform.py
+├── LICENSE                   # Apache 2.0
+└── README.md                 # This file
 ```
-
-## Prerequisites
-
-- Python 3.10+
-- `curl` or `wget`
-- `make`
 
 ## Quick start
 
-```bash
-# Download and transform all data sources
-make all
+Browse the data:
 
-# Work with a single data source
-make download SOURCE=us-ofac-sdn
-make transform SOURCE=us-ofac-sdn
+```bash
+# See what sources are available
+cat CATALOG.md
+
+# Look at a raw sample's schema
+cat samples/raw/ofac-sdn/README.md
+
+# Look at the raw data
+head samples/raw/ofac-sdn/sdn-sample.csv
+
+# Compare with the pre-mapped Senzing JSONL
+head -1 samples/cord/london/ofac.jsonl | python3 -m json.tool
+```
+
+Validate the samples:
+
+```bash
+make validate-samples
 ```
 
 ## Adding a new data source
 
-1. Copy the template:
+See [CONTRIBUTING.md](CONTRIBUTING.md) for the full guide. In short:
 
-   ```bash
-   cp -r datasources/.template datasources/<source-name>
-   ```
+1. Add an entry to [CATALOG.md](CATALOG.md)
+2. Create a raw sample under `samples/raw/<source-name>/` with a `README.md`
+3. Optionally build a full pipeline under `datasources/<source-name>/`
 
-2. Edit `datasources/<source-name>/README.md` with source details.
-3. Implement `download.sh` to fetch the raw data.
-4. Implement `transform.py` to produce Senzing-mapped JSON lines.
-5. Add the source to this README's data source table below.
+## Prerequisites
 
-## Data sources
-
-| Name          | Description | License | Records |
-|---------------|-------------|---------|---------|
-| *(none yet)*  |             |         |         |
+- Python 3.10+
+- `curl`
+- `make`
 
 ## License
 
