@@ -32,9 +32,9 @@ download URLs, field details, and licensing information.
 │   │   ├── london/        # International data (5 sources, 50 records)
 │   │   └── moscow/        # Cyrillic/non-roman script (6 sources, 60 records)
 │   └── raw/               # Original format (CSV, XML, JSON) for 18 sources
-├── scripts/               # Shared utility scripts
 ├── Makefile               # Common operations (download-all, transform-all)
-├── CLAUDE.md              # Claude Code conventions for this project
+├── CATALOG.md             # Full catalog of 30+ free data sources
+├── CONTRIBUTING.md        # Guide for adding new data sources
 ├── LICENSE                # Apache 2.0
 └── README.md              # This file
 ```

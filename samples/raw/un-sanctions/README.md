@@ -3,6 +3,7 @@
 - **Source:** United Nations Security Council
 - **Full download:** `https://scsanctions.un.org/resources/xml/en/consolidated.xml`
 - **Catalog entry:** [CATALOG.md — UN Sanctions](../../../CATALOG.md#un-security-council-consolidated-sanctions-list)
+- **License:** UN public data
 
 ## Files
 

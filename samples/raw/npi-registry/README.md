@@ -3,6 +3,7 @@
 - **Source:** CMS (Centers for Medicare & Medicaid Services)
 - **Full download:** `https://download.cms.gov/nppes/NPI_Files.html`
 - **Catalog entry:** [CATALOG.md — NPI Registry](../../../CATALOG.md#npi-national-provider-registry)
+- **License:** US government public domain
 - **CORD equivalent:** `cord/las-vegas/npi-providers.jsonl`
 
 ## Files

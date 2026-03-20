@@ -3,6 +3,7 @@
 - **Source:** US Internal Revenue Service
 - **Full download:** `https://apps.irs.gov/pub/epostcard/data-download-pub78.zip`
 - **Catalog entry:** [CATALOG.md — IRS 990](../../../CATALOG.md#irs-tax-exempt-organizations-form-990)
+- **License:** US government public domain
 
 ## Files
 

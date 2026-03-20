@@ -368,6 +368,18 @@ resolution with Senzing. Organized by category with download details for each.
 - **Update frequency:** Monthly full file, weekly incremental
 - **Sample:** [samples/raw/npi-registry/README.md](samples/raw/npi-registry/README.md)
 
+### CMS Open Payments
+
+- **Entity types:** Persons (physicians), organizations (pharma/device companies)
+- **Source:** Centers for Medicare & Medicaid Services
+- **Download:** `https://openpaymentsdata.cms.gov/`
+- **Format:** CSV
+- **Records:** ~60+ million payment records; ~600,000+ unique physicians
+- **License:** US government public domain
+- **Key fields:** Physician name, NPI, specialty, address; company name, company ID; payment amounts
+- **Update frequency:** Annually (with corrections)
+- **ER value:** Links physicians to companies; cross-references with NPI registry
+
 ---
 
 ## Campaign Finance
@@ -426,22 +438,6 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Owner name, owner address, attorney name, mark text, serial/registration number
 - **Update frequency:** Daily
-
----
-
-## Healthcare (additional)
-
-### CMS Open Payments
-
-- **Entity types:** Persons (physicians), organizations (pharma/device companies)
-- **Source:** Centers for Medicare & Medicaid Services
-- **Download:** `https://openpaymentsdata.cms.gov/`
-- **Format:** CSV
-- **Records:** ~60+ million payment records; ~600,000+ unique physicians
-- **License:** US government public domain
-- **Key fields:** Physician name, NPI, specialty, address; company name, company ID; payment amounts
-- **Update frequency:** Annually (with corrections)
-- **ER value:** Links physicians to companies; cross-references with NPI registry
 
 ---
 

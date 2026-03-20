@@ -3,6 +3,7 @@
 - **Source:** US Treasury, Office of Foreign Assets Control
 - **Full download:** `https://sanctionslistservice.ofac.treas.gov/api/publicationpreview/exports/CONS_PRIM.CSV`
 - **Catalog entry:** [CATALOG.md — OFAC Consolidated](../../../CATALOG.md#ofac-consolidated-sanctions-list)
+- **License:** US government public domain
 
 ## Files
 

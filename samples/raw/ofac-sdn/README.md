@@ -3,6 +3,7 @@
 - **Source:** US Treasury, Office of Foreign Assets Control
 - **Full download:** `https://www.treasury.gov/ofac/downloads/sdn.csv`
 - **Catalog entry:** [CATALOG.md — OFAC SDN](../../../CATALOG.md#ofac-specially-designated-nationals-sdn-list)
+- **License:** US government public domain
 - **CORD equivalent:** `cord/london/ofac.jsonl`, `cord/moscow/ofac.jsonl`
 
 ## Files

@@ -67,6 +67,26 @@ cat samples/cord/**/*.jsonl | your-senzing-loader
 
 ---
 
+## Raw-to-CORD Cross-Reference
+
+Several data sources appear in both raw and CORD forms. Compare these
+side-by-side to see how raw data maps to Senzing JSONL:
+
+| Raw Sample | CORD Equivalent(s) | Notes |
+|------------|---------------------|-------|
+| `raw/ofac-sdn/` | `cord/london/ofac.jsonl`, `cord/moscow/ofac.jsonl` | CORD combines SDN + consolidated |
+| `raw/gleif-lei/` | `cord/las-vegas/gleif.jsonl`, `cord/london/gleif.jsonl`, `cord/moscow/gleif.jsonl` | Regional subsets of GLEIF |
+| `raw/icij-offshore-leaks/` | `cord/las-vegas/icij.jsonl`, `cord/london/icij.jsonl`, `cord/moscow/icij.jsonl` | CORD flattens the graph CSVs |
+| `raw/npi-registry/` | `cord/las-vegas/npi-providers.jsonl` | Las Vegas area providers |
+| `raw/sba-ppp/` | `cord/las-vegas/ppp-loans.jsonl` | Las Vegas area loans |
+| `raw/opensanctions/` | `cord/london/open-sanctions.jsonl`, `cord/moscow/open-sanctions.jsonl` | Regional subsets |
+
+Sources in CORD without a raw sample: EQUIFAX, ENFORMION, PROFOUND,
+GLOBALDATA, NOMINO-RISK/NOMINODATA, US-LABOR-VIOLATIONS, OPEN-OWNERSHIP
+(these are commercial or not freely downloadable).
+
+---
+
 ## Raw Samples
 
 10-record samples in their original published format. These are **not**

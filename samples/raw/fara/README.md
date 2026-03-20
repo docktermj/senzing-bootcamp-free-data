@@ -3,6 +3,7 @@
 - **Source:** US Dept. of Justice, National Security Division
 - **Full download:** `https://efile.fara.gov/bulk/zip/FARA_All_Registrants.csv.zip`
 - **Catalog entry:** [CATALOG.md — FARA](../../../CATALOG.md#fara-foreign-agent-registration)
+- **License:** US government public domain
 
 ## Files
 

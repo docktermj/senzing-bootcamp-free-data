@@ -3,6 +3,7 @@
 - **Source:** US Small Business Administration (FOIA release)
 - **Full download:** `https://data.sba.gov/dataset/ppp-foia`
 - **Catalog entry:** [CATALOG.md — SBA PPP](../../../CATALOG.md#sba-ppp-loan-data)
+- **License:** US government public domain (FOIA release)
 - **CORD equivalent:** `cord/las-vegas/ppp-loans.jsonl`
 
 ## Files

@@ -3,6 +3,7 @@
 - **Source:** US Dept. of Health and Human Services, Office of Inspector General
 - **Full download:** `https://oig.hhs.gov/exclusions/exclusions_list.asp`
 - **Catalog entry:** [CATALOG.md — HHS OIG LEIE](../../../CATALOG.md#hhs-oig-list-of-excluded-individualsentities-leie)
+- **License:** US government public domain
 
 ## Files
 

@@ -3,6 +3,7 @@
 - **Source:** US Securities and Exchange Commission
 - **Full download:** `https://www.sec.gov/files/company_tickers.json`
 - **Catalog entry:** [CATALOG.md — SEC EDGAR](../../../CATALOG.md#sec-edgar-company-data)
+- **License:** US government public domain
 
 ## Files
 

@@ -3,6 +3,7 @@
 - **Source:** Federal Election Commission
 - **Full download:** `https://www.fec.gov/data/browse-data/?tab=bulk-data`
 - **Catalog entry:** [CATALOG.md — FEC](../../../CATALOG.md#fec-campaign-finance-data)
+- **License:** US government public domain
 
 ## Files
 

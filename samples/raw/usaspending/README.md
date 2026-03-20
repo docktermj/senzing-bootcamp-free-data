@@ -4,6 +4,7 @@
 - **Full download:** `https://www.usaspending.gov/download_center/award_data_archive`
 - **API docs:** `https://api.usaspending.gov/`
 - **Catalog entry:** [CATALOG.md — USASpending](../../../CATALOG.md#usaspendinggov-award-recipients)
+- **License:** US government public domain
 
 ## Files
 

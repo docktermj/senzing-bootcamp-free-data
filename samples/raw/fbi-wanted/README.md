@@ -3,6 +3,7 @@
 - **Source:** Federal Bureau of Investigation
 - **API endpoint:** `https://api.fbi.gov/wanted/v1/list`
 - **Catalog entry:** [CATALOG.md — FBI Wanted](../../../CATALOG.md#fbi-most-wanted-api)
+- **License:** US government public domain
 
 ## Files
 

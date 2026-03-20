@@ -3,6 +3,7 @@
 - **Source:** US Dept. of Education
 - **API docs:** `https://collegescorecard.ed.gov/data/`
 - **Catalog entry:** [CATALOG.md — College Scorecard](../../../CATALOG.md#college-scorecard)
+- **License:** US government public domain
 
 ## Files
 

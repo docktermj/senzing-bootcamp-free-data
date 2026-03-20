@@ -1,9 +1,9 @@
 # Makefile for senzing-bootcamp-free-data
 
 DATASOURCES_DIR := datasources
-SOURCES := $(shell find $(DATASOURCES_DIR) -mindepth 1 -maxdepth 1 -type d ! -name '.template' | sort)
+SOURCES := $(shell find $(DATASOURCES_DIR) -mindepth 1 -maxdepth 1 -type d ! -name '.template' 2>/dev/null | sort)
 
-.PHONY: all download-all transform-all clean list help
+.PHONY: all download-all transform-all download transform clean list validate-samples help
 
 help: ## Show this help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | sort | \
@@ -41,3 +41,19 @@ list: ## List available data sources
 	@for src in $(SOURCES); do \
 		echo "  $$(basename $$src)"; \
 	done
+
+validate-samples: ## Validate CORD sample JSONL files are valid JSON
+	@echo "Validating CORD samples..."
+	@errors=0; \
+	for f in samples/cord/*/*.jsonl; do \
+		if ! python3 -c "import json,sys; [json.loads(l) for l in open('$$f')]" 2>/dev/null; then \
+			echo "  FAIL: $$f"; \
+			errors=$$((errors + 1)); \
+		fi; \
+	done; \
+	if [ $$errors -eq 0 ]; then \
+		echo "  All CORD samples are valid JSON."; \
+	else \
+		echo "  $$errors file(s) failed validation."; \
+		exit 1; \
+	fi
