@@ -66,6 +66,7 @@ Each item contains (key fields for entity resolution):
 | ncic                 | NCIC fingerprint code                         |
 | status               | Case status                                   |
 | path                 | URL path on fbi.gov                           |
+| pathId               | Numeric path identifier                       |
 | url                  | Full URL                                      |
 | images               | Array of image objects                        |
 | files                | Array of document objects                     |

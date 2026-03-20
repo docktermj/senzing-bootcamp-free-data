@@ -24,14 +24,19 @@ Offshore companies and legal entities.
 | jurisdiction_description | Full jurisdiction name                     |
 | company_type             | Entity type                                |
 | address                  | Registered agent/address                   |
+| internal_id              | Internal database identifier               |
 | incorporation_date       | Date incorporated                          |
 | inactivation_date        | Date inactivated                           |
 | struck_off_date          | Date struck off registry                   |
+| dorm_date                | Dormancy date                              |
 | status                   | Current status                             |
 | service_provider         | Registered agent firm                      |
+| ibcRUC                   | IBC/RUC registration number                |
 | country_codes            | ISO country codes                          |
 | countries                | Country names                              |
 | sourceID                 | Leak source (Panama Papers, Pandora, etc.) |
+| valid_until              | Data validity note                         |
+| note                     | Additional notes                           |
 
 ### nodes-officers-sample.csv
 

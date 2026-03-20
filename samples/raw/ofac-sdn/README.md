@@ -30,9 +30,24 @@ Headerless CSV. Columns are positional (no header row):
 
 ### sdn-sample.xml
 
-XML format with `<sdnEntry>` elements. Key child elements:
-`<uid>`, `<lastName>`, `<firstName>`, `<sdnType>`, `<programList>`,
-`<akaList>`, `<addressList>`, `<dateOfBirthList>`, `<idList>`.
+XML format with `<sdnEntry>` elements. Child elements:
+
+| Element            | Description                                          |
+|--------------------|------------------------------------------------------|
+| uid                | Unique entity number                                 |
+| lastName           | Last name (or full org name for entities)             |
+| firstName          | First name (persons only)                            |
+| title              | Title or position                                    |
+| sdnType            | "Individual", "Entity", "Vessel", "Aircraft"         |
+| remarks            | Free text (DOB, POB, passport, etc.)                 |
+| programList        | Contains `<program>` elements (sanctions programs)   |
+| akaList            | Contains `<aka>` elements with alias names           |
+| addressList        | Contains `<address>` with city, country, etc.        |
+| nationalityList    | Contains `<nationality>` with country                |
+| dateOfBirthList    | Contains `<dateOfBirthItem>` with `<dateOfBirth>`    |
+| placeOfBirthList   | Contains `<placeOfBirthItem>` with `<placeOfBirth>`  |
+| idList             | Contains `<id>` with `<idType>`, `<idNumber>`, `<idCountry>` |
+| vesselInfo         | Contains `<callSign>`, `<vesselType>`, `<tonnage>`, `<vesselFlag>`, `<vesselOwner>` |
 
 ## Entity types
 
