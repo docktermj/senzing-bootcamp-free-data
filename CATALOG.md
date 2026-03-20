@@ -8,7 +8,7 @@ resolution with Senzing. Organized by category with download details for each.
 
 ## Summary
 
-34 data sources across 13 categories. Click a name to jump to full details.
+35 data sources across 14 categories. Click a name to jump to full details.
 
 **P** = Persons, **O** = Organizations, **Sample** = raw sample included in this repo.
 
@@ -61,6 +61,8 @@ resolution with Senzing. Organized by category with download details for each.
 | **Education** | | | |
 | [College Scorecard](#college-scorecard) | O | ~7K | [yes](samples/raw/college-scorecard/README.md) |
 | [NCES/IPEDS](#nces-education-directory-ipeds) | O | ~137K | |
+| **Aggregated Entity Graphs** | | | |
+| [OpenData.org US Entity Dataset](#opendataorg-us-entity-dataset) | P, O | ~86M orgs, ~101M contacts, ~142M locations | |
 
 ---
 
@@ -521,6 +523,35 @@ resolution with Senzing. Organized by category with download details for each.
 - **Key fields:** Institution name, address, district name, NCES ID, phone, administrator name
 - **License:** US government public domain
 - **Update frequency:** Annually
+
+---
+
+## Aggregated Entity Graphs
+
+### OpenData.org US Entity Dataset
+
+- **Entity types:** Organizations, persons (contacts/officers), locations
+- **Source:** OpenData.org / BrightQuery
+- **Download:** `https://opendata.org/data-download` (free registration required)
+- **Format:** CSV and Senzing-ready JSON
+- **Records:** ~86 million organizations; ~101 million contacts (person-to-company
+  relationships); ~142 million locations
+- **License:** Core fields are free; premium data available for advanced needs
+- **Key fields:** Organization name, DBA, address (cleaned/standardized), officers,
+  ownership structures, 162 reference identifiers (LEI, FIGI, ISIN, CIK, NPI,
+  Placekey, ticker, PermID, and others)
+- **Update frequency:** Quarterly
+- **Data sources aggregated:** IRS, Department of Labor, SEC, SBA, USPS, and
+  state/local jurisdictions (100,000+ US government agencies)
+- **Senzing integration:** Built in partnership with Senzing — includes pre-mapped
+  Senzing JSON format with entity resolution applied
+- **ER value:** Single unified dataset covering many of the individual sources in
+  this catalog (IRS, SEC, SBA, NPI, etc.) with cross-linked organizations,
+  contacts, and locations
+- **References:**
+  - [OpenData.org](https://opendata.org/)
+  - [Launch announcement — BusinessWire](https://www.businesswire.com/news/home/20260306956184/en/OpenData.org-Launches-Comprehensive-U.S.-Entity-Dataset-with-Senzing-AI)
+  - [Launch announcement — GlobeNewsWire](https://www.globenewswire.com/news-release/2026/03/05/3250540/0/en/OpenData-org-Launches-Comprehensive-U-S-Entity-Dataset-with-Senzing-AI.html)
 
 ---
 

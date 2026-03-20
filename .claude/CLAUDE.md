@@ -32,12 +32,23 @@ When helping a user with this repo, start with:
 3. The `README.md` inside the relevant `samples/raw/<source>/` directory -
    To understand the schema of a specific data source
 
+## Critical Rule
+
+**All sample data in this repository MUST be kept in its raw, original state.
+NEVER transform, map, or convert the data.** The purpose of this repo is to
+provide raw data so that bootcamp participants practice building their own
+Senzing mappings. The only exception is the `samples/cord/` directory, which
+contains pre-mapped CORD data provided by Senzing.
+
 ## Conventions
 
 - **Data source naming**: Use lowercase kebab-case matching the source
   (e.g. `us-ofac-sdn`, `us-sam-exclusions`).
-- **Senzing mapping**: Always use the Senzing MCP `mapping_workflow` tool to
-  generate mappings. Do not hand-code Senzing JSON attribute names.
+- **Raw samples**: Always store data in its original published format.
+  Never transform, reformat, or map sample data to Senzing JSON.
+- **Senzing mapping**: When helping users build mappings (outside this repo),
+  always use the Senzing MCP `mapping_workflow` tool. Do not hand-code
+  Senzing JSON attribute names.
 - **Transform output**: One JSON object per line (JSONL). Each record must
   include `DATA_SOURCE` and `RECORD_ID` fields.
 - **Download scripts**: Must be idempotent. Use `curl -z` or check timestamps
