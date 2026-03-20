@@ -14,7 +14,7 @@ Two types of samples are provided:
 > **Note:** CORD data is real (not synthetic) — historical snapshots for
 > evaluation/testing only, not operational use.
 
-## Las Vegas CORD (10 sources, US data)
+## [Las Vegas CORD](cord/las-vegas/README.md) (10 sources, US data)
 
 | File                    | Source              | Records | Entity Types       |
 |-------------------------|---------------------|---------|--------------------|
@@ -29,7 +29,7 @@ Two types of samples are provided:
 | us-labor-violations.jsonl | US-LABOR-VIOLATIONS | 10    | Organizations      |
 | icij.jsonl              | ICIJ                | 10      | Persons, Orgs      |
 
-## London CORD (5 sources, international data)
+## [London CORD](cord/london/README.md) (5 sources, international data)
 
 | File                | Source          | Records | Entity Types       |
 |---------------------|-----------------|---------|-------------------|
@@ -39,7 +39,7 @@ Two types of samples are provided:
 | ofac.jsonl          | OFAC            | 10      | Persons, Orgs      |
 | open-sanctions.jsonl | OPEN-SANCTIONS | 10      | Persons, Orgs      |
 
-## Moscow CORD (6 sources, Cyrillic/non-roman script data)
+## [Moscow CORD](cord/moscow/README.md) (6 sources, Cyrillic/non-roman script data)
 
 | File                 | Source          | Records | Entity Types       |
 |----------------------|-----------------|---------|-------------------|
@@ -97,69 +97,69 @@ transformations.
 
 | Directory             | File(s)                         | Format | Source                     |
 |-----------------------|---------------------------------|--------|----------------------------|
-| `ofac-sdn/`          | sdn-sample.csv, sdn-sample.xml | CSV, XML | US Treasury OFAC SDN List |
-| `ofac-consolidated/`  | consolidated-sample.csv        | CSV    | OFAC Consolidated List     |
-| `un-sanctions/`       | consolidated-sample.xml        | XML    | UN Security Council        |
-| `opensanctions/`      | opensanctions-sample.csv       | CSV    | OpenSanctions (all lists)  |
+| [`ofac-sdn/`](raw/ofac-sdn/README.md) | sdn-sample.csv, sdn-sample.xml | CSV, XML | US Treasury OFAC SDN List |
+| [`ofac-consolidated/`](raw/ofac-consolidated/README.md) | consolidated-sample.csv | CSV | OFAC Consolidated List |
+| [`un-sanctions/`](raw/un-sanctions/README.md) | consolidated-sample.xml | XML | UN Security Council |
+| [`opensanctions/`](raw/opensanctions/README.md) | opensanctions-sample.csv | CSV | OpenSanctions (all lists) |
 
 ### Government Exclusions
 
 | Directory         | File(s)           | Format | Source          |
 |-------------------|-------------------|--------|-----------------|
-| `hhs-oig-leie/`  | leie-sample.csv   | CSV    | HHS OIG LEIE    |
+| [`hhs-oig-leie/`](raw/hhs-oig-leie/README.md) | leie-sample.csv | CSV | HHS OIG LEIE |
 
 ### Corporate and Business Registries
 
 | Directory            | File(s)                     | Format | Source                  |
 |----------------------|-----------------------------|--------|-------------------------|
-| `gleif-lei/`         | gleif-lei-sample.csv        | CSV    | GLEIF Global LEI        |
-| `sec-edgar/`         | company-tickers-sample.json | JSON   | SEC EDGAR               |
-| `uk-companies-house/`| companies-sample.csv        | CSV    | UK Companies House      |
-| `irs-990/`           | pub78-sample.txt            | TXT    | IRS Publication 78      |
-| `sba-ppp/`           | ppp-loans-sample.csv        | CSV    | SBA PPP Loan Data       |
-| `usaspending/`       | awards-sample.json          | JSON   | USASpending.gov API     |
+| [`gleif-lei/`](raw/gleif-lei/README.md) | gleif-lei-sample.csv | CSV | GLEIF Global LEI |
+| [`sec-edgar/`](raw/sec-edgar/README.md) | company-tickers-sample.json | JSON | SEC EDGAR |
+| [`uk-companies-house/`](raw/uk-companies-house/README.md) | companies-sample.csv | CSV | UK Companies House |
+| [`irs-990/`](raw/irs-990/README.md) | pub78-sample.txt | TXT | IRS Publication 78 |
+| [`sba-ppp/`](raw/sba-ppp/README.md) | ppp-loans-sample.csv | CSV | SBA PPP Loan Data |
+| [`usaspending/`](raw/usaspending/README.md) | awards-sample.json | JSON | USASpending.gov API |
 
 ### Political Figures (PEPs)
 
 | Directory           | File(s)          | Format | Source             |
 |---------------------|------------------|--------|--------------------|
-| `opensanctions-pep/`| pep-sample.csv   | CSV    | OpenSanctions PEPs |
+| [`opensanctions-pep/`](raw/opensanctions-pep/README.md) | pep-sample.csv | CSV | OpenSanctions PEPs |
 
 ### Investigative / Adverse Media
 
 | Directory              | File(s)                                                                                    | Format | Source               |
 |------------------------|--------------------------------------------------------------------------------------------|--------|----------------------|
-| `icij-offshore-leaks/` | nodes-entities-sample.csv, nodes-officers-sample.csv, nodes-addresses-sample.csv, relationships-sample.csv | CSV | ICIJ Offshore Leaks |
+| [`icij-offshore-leaks/`](raw/icij-offshore-leaks/README.md) | nodes-entities-sample.csv, nodes-officers-sample.csv, nodes-addresses-sample.csv, relationships-sample.csv | CSV | ICIJ Offshore Leaks |
 
 ### Healthcare
 
 | Directory        | File(s)          | Format | Source           |
 |------------------|------------------|--------|------------------|
-| `npi-registry/`  | npi-sample.csv   | CSV    | CMS NPI Registry |
+| [`npi-registry/`](raw/npi-registry/README.md) | npi-sample.csv | CSV | CMS NPI Registry |
 
 ### Campaign Finance
 
 | Directory            | File(s)                                      | Format | Source |
 |----------------------|----------------------------------------------|--------|--------|
-| `fec-contributions/` | candidates-sample.txt, committees-sample.txt | TXT    | FEC    |
+| [`fec-contributions/`](raw/fec-contributions/README.md) | candidates-sample.txt, committees-sample.txt | TXT | FEC |
 
 ### Lobbying
 
 | Directory | File(s)                 | Format | Source                |
 |-----------|-------------------------|--------|-----------------------|
-| `fara/`   | registrants-sample.csv  | CSV    | DOJ FARA Registrants  |
+| [`fara/`](raw/fara/README.md) | registrants-sample.csv | CSV | DOJ FARA Registrants |
 
 ### Education
 
 | Directory            | File(s)                  | Format | Source            |
 |----------------------|--------------------------|--------|-------------------|
-| `college-scorecard/` | scorecard-sample.json    | JSON   | College Scorecard API |
+| [`college-scorecard/`](raw/college-scorecard/README.md) | scorecard-sample.json | JSON | College Scorecard API |
 
 ### Law Enforcement
 
 | Directory     | File(s)                  | Format | Source         |
 |---------------|--------------------------|--------|----------------|
-| `fbi-wanted/` | fbi-wanted-sample.json   | JSON   | FBI Wanted API |
+| [`fbi-wanted/`](raw/fbi-wanted/README.md) | fbi-wanted-sample.json | JSON | FBI Wanted API |
 
 ### Sources not included (blocked or require accounts)
 
