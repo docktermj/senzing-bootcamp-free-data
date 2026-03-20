@@ -53,20 +53,27 @@ Addresses associated with entities and officers.
 |---------------|--------------------------|
 | node_id       | Unique node identifier   |
 | address       | Full address text        |
+| name          | Address label/name       |
 | country_codes | ISO country codes        |
 | countries     | Country names            |
 | sourceID      | Leak source              |
+| valid_until   | Data validity note       |
+| note          | Additional notes         |
 
 ### relationships-sample.csv
 
 Edges connecting nodes (officer→entity, entity→address, etc.).
 
-| Column   | Description                                                |
-|----------|------------------------------------------------------------|
-| node_id_start | Source node ID                                        |
-| node_id_end   | Target node ID                                        |
+| Column        | Description                                          |
+|---------------|------------------------------------------------------|
+| node_id_start | Source node ID                                       |
+| node_id_end   | Target node ID                                       |
 | rel_type      | Relationship type (e.g. officer_of, registered_address)|
-| sourceID      | Leak source                                           |
+| link          | Relationship link description                        |
+| status        | Relationship status                                  |
+| start_date    | Relationship start date                              |
+| end_date      | Relationship end date                                |
+| sourceID      | Leak source                                          |
 
 ## Entity types
 

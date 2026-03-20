@@ -20,26 +20,57 @@ JSON response from the FBI Wanted API. Structure:
 
 Each item contains (key fields for entity resolution):
 
-| Field              | Description                                   |
-|--------------------|-----------------------------------------------|
-| uid                | Unique FBI identifier                         |
-| title              | Subject name / case title                     |
-| sex                | Gender                                        |
-| hair               | Hair color                                    |
-| weight             | Weight                                        |
-| age_range          | Estimated age range                           |
-| age_min / age_max  | Minimum/maximum age                           |
-| dates_of_birth_used| Array of DOB strings                          |
-| nationality        | Nationality                                   |
-| race               | Race                                          |
-| occupations        | Array of known occupations                    |
-| aliases            | Array of known aliases                        |
-| field_offices      | FBI field offices involved                    |
-| locations          | Array of known locations                      |
-| caution            | Caution/warning text (HTML)                   |
-| reward_text        | Reward description                            |
-| ncic               | NCIC fingerprint code                         |
-| files              | Array of image/document URLs                  |
+| Field                | Description                                   |
+|----------------------|-----------------------------------------------|
+| uid                  | Unique FBI identifier                         |
+| title                | Subject name / case title                     |
+| aliases              | Array of known aliases                        |
+| sex                  | Gender                                        |
+| race                 | Race                                          |
+| race_raw             | Race (raw/unprocessed value)                  |
+| nationality          | Nationality                                   |
+| dates_of_birth_used  | Array of DOB strings                          |
+| place_of_birth       | Place of birth                                |
+| hair                 | Hair color                                    |
+| hair_raw             | Hair (raw/unprocessed value)                  |
+| eyes                 | Eye color                                     |
+| eyes_raw             | Eyes (raw/unprocessed value)                  |
+| height_min / height_max | Height range (inches)                      |
+| weight               | Weight description                            |
+| weight_min / weight_max | Weight range (pounds)                      |
+| build                | Body build description                        |
+| complexion           | Complexion                                    |
+| scars_and_marks      | Scars, marks, tattoos                         |
+| age_range            | Estimated age range                           |
+| age_min / age_max    | Minimum/maximum age                           |
+| occupations          | Array of known occupations                    |
+| languages            | Array of known languages                      |
+| field_offices        | FBI field offices involved                    |
+| legat_names          | Legal attache offices                         |
+| locations            | Array of known locations                      |
+| coordinates          | Array of lat/lon coordinates                  |
+| possible_countries   | Array of possible countries                   |
+| possible_states      | Array of possible states                      |
+| caution              | Caution/warning text (HTML)                   |
+| warning_message      | Warning message                               |
+| details              | Case details (HTML)                           |
+| description          | Case description                              |
+| additional_information| Additional info text                          |
+| remarks              | Remarks                                       |
+| reward_text          | Reward description                            |
+| reward_min / reward_max | Reward dollar range                        |
+| subjects             | Array of subject categories                   |
+| suspects             | Related suspects                              |
+| person_classification| Classification (Main, Victim, etc.)           |
+| poster_classification| Poster type (ten, fugitive, etc.)             |
+| ncic                 | NCIC fingerprint code                         |
+| status               | Case status                                   |
+| path                 | URL path on fbi.gov                           |
+| url                  | Full URL                                      |
+| images               | Array of image objects                        |
+| files                | Array of document objects                     |
+| modified             | Last modified date                            |
+| publication          | Publication date                              |
 
 ## Entity types
 
