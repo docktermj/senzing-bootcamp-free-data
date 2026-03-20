@@ -396,6 +396,75 @@ resolution with Senzing. Organized by category with download details for each.
 
 ---
 
+## Intellectual Property
+
+### USPTO Patent Grant & Application Data
+
+- **Entity types:** Persons (inventors), organizations (assignees)
+- **Source:** US Patent and Trademark Office
+- **Download:** `https://bulkdata.uspto.gov/`
+- **Format:** XML, CSV, JSON
+- **Records:** Millions of patents; ~3.5 million active patents with inventor/assignee data
+- **License:** US government public domain
+- **Key fields:** Inventor name, inventor address (city, state, country), assignee org name, assignee address, patent number
+- **Update frequency:** Weekly
+- **ER value:** Cross-link inventors (persons) with assignee companies (orgs); inventors appear across multiple patents with address variations
+
+### USPTO Trademark Data
+
+- **Entity types:** Persons, organizations (trademark owners)
+- **Source:** US Patent and Trademark Office
+- **Download:** `https://bulkdata.uspto.gov/` (Trademark section)
+- **Format:** XML
+- **Records:** ~8+ million trademark registrations
+- **License:** US government public domain
+- **Key fields:** Owner name, owner address, attorney name, mark text, serial/registration number
+- **Update frequency:** Daily
+
+---
+
+## Healthcare (additional)
+
+### CMS Open Payments
+
+- **Entity types:** Persons (physicians), organizations (pharma/device companies)
+- **Source:** Centers for Medicare & Medicaid Services
+- **Download:** `https://openpaymentsdata.cms.gov/`
+- **Format:** CSV
+- **Records:** ~60+ million payment records; ~600,000+ unique physicians
+- **License:** US government public domain
+- **Key fields:** Physician name, NPI, specialty, address; company name, company ID; payment amounts
+- **Update frequency:** Annually (with corrections)
+- **ER value:** Links physicians to companies; cross-references with NPI registry
+
+---
+
+## Education
+
+### College Scorecard
+
+- **Entity types:** Organizations (educational institutions)
+- **Source:** US Dept. of Education
+- **Download:** `https://collegescorecard.ed.gov/data/`
+- **Format:** CSV
+- **Records:** ~7,000 institutions
+- **License:** US government public domain
+- **Key fields:** Institution name, OPEID, address (city, state, ZIP), institution type, accreditor
+- **Update frequency:** Annually
+
+### NCES Education Directory (IPEDS)
+
+- **Entity types:** Organizations (schools, colleges, districts)
+- **Source:** National Center for Education Statistics
+- **Download:** `https://nces.ed.gov/ipeds/use-the-data`
+- **Format:** CSV
+- **Records:** ~7,000 postsecondary institutions; ~130,000 K-12 schools via CCD
+- **Key fields:** Institution name, address, district name, NCES ID, phone, administrator name
+- **License:** US government public domain
+- **Update frequency:** Annually
+
+---
+
 ## Pre-Mapped Senzing Data (CORD)
 
 Senzing provides pre-mapped Collections Of Relatable Data (CORDs) for testing:
