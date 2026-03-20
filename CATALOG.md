@@ -23,6 +23,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Name, aliases, DOB, place of birth, nationality, passport/ID numbers, addresses
 - **Update frequency:** Business days
+- **Sample:** [samples/raw/ofac-sdn/README.md](samples/raw/ofac-sdn/README.md)
 
 ### OFAC Consolidated Sanctions List
 
@@ -36,6 +37,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Name, aliases, DOB, addresses, ID numbers, program codes
 - **Update frequency:** Business days
+- **Sample:** [samples/raw/ofac-consolidated/README.md](samples/raw/ofac-consolidated/README.md)
 
 ### UN Security Council Consolidated Sanctions List
 
@@ -48,6 +50,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** UN public data
 - **Key fields:** Name, aliases, DOB, place of birth, nationality, passport numbers, addresses
 - **Update frequency:** Per UNSC resolution
+- **Sample:** [samples/raw/un-sanctions/README.md](samples/raw/un-sanctions/README.md)
 
 ### EU Consolidated Sanctions List
 
@@ -95,6 +98,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** CC BY (free for non-commercial use)
 - **Key fields:** Name, aliases, DOB, nationality, positions, source citations
 - **Update frequency:** Daily
+- **Sample:** [samples/raw/opensanctions/README.md](samples/raw/opensanctions/README.md)
 
 ---
 
@@ -110,6 +114,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Name, DOB, address, NPI, exclusion type/date, specialty
 - **Update frequency:** Monthly (1st business day)
+- **Sample:** [samples/raw/hhs-oig-leie/README.md](samples/raw/hhs-oig-leie/README.md)
 
 ### SAM.gov Exclusions
 
@@ -136,6 +141,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** CC0 (public domain)
 - **Key fields:** LEI, legal name, legal address, HQ address, entity category, status, registration authority/number, parent/child relationships
 - **Update frequency:** Daily deltas, monthly full snapshots
+- **Sample:** [samples/raw/gleif-lei/README.md](samples/raw/gleif-lei/README.md)
 
 ### SEC EDGAR Company Data
 
@@ -150,6 +156,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Company name, CIK, SIC code, state of incorporation, addresses, former names
 - **Update frequency:** Daily
+- **Sample:** [samples/raw/sec-edgar/README.md](samples/raw/sec-edgar/README.md)
 
 ### UK Companies House
 
@@ -161,6 +168,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** Open Government Licence v3.0
 - **Key fields:** Company number, name, registered address, category, status, SIC codes, previous names
 - **Update frequency:** Monthly
+- **Sample:** [samples/raw/uk-companies-house/README.md](samples/raw/uk-companies-house/README.md)
 
 ### IRS Tax-Exempt Organizations (Form 990)
 
@@ -174,6 +182,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** EIN, org name, city, state, deductibility status; XML includes officers, compensation, board members
 - **Update frequency:** CSV monthly; XML quarterly batches
+- **Sample:** [samples/raw/irs-990/README.md](samples/raw/irs-990/README.md)
 
 ### SAM.gov Entity Management (Federal Contractors)
 
@@ -196,6 +205,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain (FOIA release)
 - **Key fields:** Business name, address, business type, NAICS code, loan amount, lender name
 - **Update frequency:** Static (program ended May 2021)
+- **Sample:** [samples/raw/sba-ppp/README.md](samples/raw/sba-ppp/README.md)
 
 ### USASpending.gov Award Recipients
 
@@ -207,6 +217,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Recipient name, UEI, address, business types, award amount, parent recipient
 - **Update frequency:** Twice weekly
+- **Sample:** [samples/raw/usaspending/README.md](samples/raw/usaspending/README.md)
 
 ### Australia ASIC Company Register
 
@@ -266,6 +277,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** CC BY (free for non-commercial use)
 - **Key fields:** Name, aliases, DOB, nationality, positions, country
 - **Update frequency:** Daily
+- **Sample:** [samples/raw/opensanctions-pep/README.md](samples/raw/opensanctions-pep/README.md)
 
 ---
 
@@ -281,6 +293,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** CC BY-SA
 - **Key fields:** Name, jurisdiction, country, linked officers/entities, source dataset
 - **Update frequency:** Per new ICIJ investigation
+- **Sample:** [samples/raw/icij-offshore-leaks/README.md](samples/raw/icij-offshore-leaks/README.md)
 
 ---
 
@@ -337,6 +350,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Name, aliases, DOB, place of birth, nationality, charges
 - **Update frequency:** Continuous
+- **Sample:** [samples/raw/fbi-wanted/README.md](samples/raw/fbi-wanted/README.md)
 
 ---
 
@@ -352,6 +366,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** NPI, provider name, credential, address, phone, taxonomy (specialty), gender
 - **Update frequency:** Monthly full file, weekly incremental
+- **Sample:** [samples/raw/npi-registry/README.md](samples/raw/npi-registry/README.md)
 
 ---
 
@@ -367,6 +382,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Contributor name, address, employer, occupation, amount, committee name
 - **Update frequency:** Daily during election cycles
+- **Sample:** [samples/raw/fec-contributions/README.md](samples/raw/fec-contributions/README.md)
 
 ---
 
@@ -382,6 +398,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Registrant name, address, country of principal, registration number, type
 - **Update frequency:** Quarterly
+- **Sample:** [samples/raw/fara/README.md](samples/raw/fara/README.md)
 
 ---
 
@@ -440,6 +457,7 @@ resolution with Senzing. Organized by category with download details for each.
 - **License:** US government public domain
 - **Key fields:** Institution name, OPEID, address (city, state, ZIP), institution type, accreditor
 - **Update frequency:** Annually
+- **Sample:** [samples/raw/college-scorecard/README.md](samples/raw/college-scorecard/README.md)
 
 ### NCES Education Directory (IPEDS)
 
