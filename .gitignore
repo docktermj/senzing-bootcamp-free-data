@@ -1,0 +1,13 @@
+# Raw and mapped data files (can be large)
+datasources/*/data/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
