@@ -6,6 +6,62 @@ resolution with Senzing. Organized by category with download details for each.
 > **Note:** URLs were verified as of March 2026. Government sites occasionally
 > restructure paths — confirm download URLs before building pipelines.
 
+## Summary
+
+34 data sources across 13 categories. Click a name to jump to full details.
+
+**P** = Persons, **O** = Organizations, **Sample** = raw sample included in this repo.
+
+| Source | Types | Records | Sample |
+|--------|-------|---------|--------|
+| **Sanctions and Watchlists** | | | |
+| [OFAC SDN List](#ofac-specially-designated-nationals-sdn-list) | P, O | ~12K | [yes](samples/raw/ofac-sdn/README.md) |
+| [OFAC Consolidated](#ofac-consolidated-sanctions-list) | P, O | ~40K | [yes](samples/raw/ofac-consolidated/README.md) |
+| [UN Sanctions](#un-security-council-consolidated-sanctions-list) | P, O | ~1K | [yes](samples/raw/un-sanctions/README.md) |
+| [EU Sanctions](#eu-consolidated-sanctions-list) | P, O | ~3K | |
+| [BIS Denied Persons](#bis-denied-persons-list) | P, O | ~2K | |
+| [BIS Entity List](#bis-entity-list) | O, P | ~3K | |
+| [OpenSanctions](#opensanctions-consolidated-dataset) | P, O | ~500K | [yes](samples/raw/opensanctions/README.md) |
+| **Government Exclusions** | | | |
+| [HHS OIG LEIE](#hhs-oig-list-of-excluded-individualsentities-leie) | P, O | ~76K | [yes](samples/raw/hhs-oig-leie/README.md) |
+| [SAM.gov Exclusions](#samgov-exclusions) | P, O | ~650K | |
+| **Corporate and Business Registries** | | | |
+| [GLEIF Global LEI](#gleif-global-lei-data) | O | ~2.5M | [yes](samples/raw/gleif-lei/README.md) |
+| [SEC EDGAR](#sec-edgar-company-data) | O | ~500K | [yes](samples/raw/sec-edgar/README.md) |
+| [UK Companies House](#uk-companies-house) | O | ~5.5M | [yes](samples/raw/uk-companies-house/README.md) |
+| [IRS 990](#irs-tax-exempt-organizations-form-990) | O (P in XML) | ~1.9M | [yes](samples/raw/irs-990/README.md) |
+| [SAM.gov Entities](#samgov-entity-management-federal-contractors) | O | ~750K | |
+| [SBA PPP Loans](#sba-ppp-loan-data) | O | ~12M | [yes](samples/raw/sba-ppp/README.md) |
+| [USASpending](#usaspendinggov-award-recipients) | O | ~500K | [yes](samples/raw/usaspending/README.md) |
+| [Australia ASIC](#australia-asic-company-register) | O | ~3M | |
+| [Corporations Canada](#corporations-canada) | O | ~500K | |
+| [US State Registries](#us-state-corporate-registries-selected) | O | varies | |
+| **Political Figures (PEPs)** | | | |
+| [Wikidata Politicians](#wikidata-politicians) | P | ~200K | |
+| [OpenSanctions PEPs](#opensanctions-pep-dataset) | P | ~350K | [yes](samples/raw/opensanctions-pep/README.md) |
+| **Investigative / Adverse Media** | | | |
+| [ICIJ Offshore Leaks](#icij-offshore-leaks-database) | P, O | ~800K | [yes](samples/raw/icij-offshore-leaks/README.md) |
+| **Beneficial Ownership** | | | |
+| [OpenOwnership (BODS)](#openownership-register-bods) | P, O | ~10M | |
+| **Voter Registration** | | | |
+| [NC Voter Registration](#north-carolina-voter-registration) | P | ~8M | |
+| [Ohio Voter Registration](#ohio-voter-registration) | P | ~8M | |
+| **Law Enforcement** | | | |
+| [FBI Most Wanted](#fbi-most-wanted-api) | P | ~400 | [yes](samples/raw/fbi-wanted/README.md) |
+| **Healthcare** | | | |
+| [NPI Registry](#npi-national-provider-registry) | P, O | ~7M | [yes](samples/raw/npi-registry/README.md) |
+| [CMS Open Payments](#cms-open-payments) | P, O | ~60M | |
+| **Campaign Finance** | | | |
+| [FEC Contributions](#fec-campaign-finance-data) | P, O | ~millions/cycle | [yes](samples/raw/fec-contributions/README.md) |
+| **Lobbying** | | | |
+| [FARA](#fara-foreign-agent-registration) | P, O | ~10K | [yes](samples/raw/fara/README.md) |
+| **Intellectual Property** | | | |
+| [USPTO Patents](#uspto-patent-grant--application-data) | P, O | ~3.5M | |
+| [USPTO Trademarks](#uspto-trademark-data) | P, O | ~8M | |
+| **Education** | | | |
+| [College Scorecard](#college-scorecard) | O | ~7K | [yes](samples/raw/college-scorecard/README.md) |
+| [NCES/IPEDS](#nces-education-directory-ipeds) | O | ~137K | |
+
 ---
 
 ## Sanctions and Watchlists
